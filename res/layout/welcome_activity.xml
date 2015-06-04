@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#4ec5c9"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".WelcomeActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:gravity="center">
+
+    <TextView
+            android:id="@+id/appname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看板APP"
+            android:textColor="#333333"
+            android:textSize="55dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/welcome_download_progress_tip_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:visibility="invisible"
+        android:gravity="right"
+        android:text="0/100%"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</LinearLayout>

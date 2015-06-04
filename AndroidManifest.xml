@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jd.jr.kanbanApp"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7"/>
+    <application
+            android:name="com.jd.jr.kanbanApp.KanbanApp"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher">
+        <activity android:name="com.jd.jr.kanbanApp.activity.WelcomeActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 登录 -->
+        <activity
+                android:name="com.jd.jr.kanbanApp.activity.LoginActivity"
+                android:windowSoftInputMode="adjustUnspecified|stateHidden"
+                android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+                android:name="com.jd.jr.kanbanApp.activity.HomeActivity"
+                >
+
+        </activity>
+
+    </application>
+
+
+    <!-- 权限 -->
+    <!-- 互联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 检查网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- 生成桌面快捷方式，通过长按桌面 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 访问 WIFI 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 改变 WIFI 状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 在某些特殊情况下， wifi的开启可能需要这个权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>

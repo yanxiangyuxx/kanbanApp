@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF0000</color>
+    <color name="gray">#FFCCCCCC</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#EE0000C6</color>
+
+    <color name="info_gray">#ff9d9d9d</color>
+
+
+    <color name="transparent">#00000000</color>
+
+    <!-- 对话框标题文字 -->
+    <color name="dialog_title">#FF4ec3ca</color>
+    <!-- 对话框左侧按钮文字normal -->
+    <color name="dialog_button_left_normal">#FF757f80</color>
+    <!-- 对话框右侧按钮文字normal -->
+    <color name="dialog_button_right_normal">#FF2d989e</color>
+    <!-- 对话框右侧按钮文字normal -->
+    <color name="dialog_button_right_pressed">#FFffffff</color>
+    <!-- 对话框按钮文字forbidden -->
+    <color name="dialog_button_text_forbidden">#FFd5d5d5</color>
+</resources>

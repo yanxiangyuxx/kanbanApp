@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearTitleFail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comkit_alert_action_title"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_title_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="失败提示"
+                android:textColor="@color/dialog_title"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comkit_alert_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="14dp"
+            android:paddingTop="25dp" >
+
+            <TextView
+                android:id="@+id/tv_failReason"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="失败原因"
+                android:textColor="@color/info_gray"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearTwo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/comkit_alert_action_left"
+            android:text="返回列表t"
+            android:textColor="@color/dialog_button_left_normal"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/comkit_alert_action_right"
+            android:text="查看明细"
+            android:textColor="@color/dialog_button_right_normal"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comkit_alert_action_single"
+        android:text="重新登录"
+        android:textColor="@color/dialog_button_right_normal"
+        android:textSize="14dp" 
+        android:visibility="visible"/>
+
+</LinearLayout>

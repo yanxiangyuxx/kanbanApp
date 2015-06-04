@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearTitleFail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comkit_alert_action_title"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_title_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络提示"
+                android:textColor="@color/dialog_title"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comkit_alert_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="14dp"
+            android:paddingTop="25dp" >
+
+            <TextView
+                android:id="@+id/tv_failReason"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="网络不给力，请检查您的网络设置"
+                android:textColor="@color/info_gray"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comkit_alert_action_single"
+        android:text="查看详情"
+        android:textColor="@color/dialog_button_right_normal"
+        android:textSize="14dp" 
+        android:visibility="visible"/>
+
+</LinearLayout>

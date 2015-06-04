@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">看板客户端</string>
+    <string name="loading_txt">正在努力加载...</string>
+    <string name="btntext_cancel">返回</string>
+</resources>
