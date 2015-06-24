@@ -1,121 +1,91 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#F7F7F7"
-    tools:context=".HomeActivity" >
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#F7F7F7"
+                tools:context=".HomeActivity" >
 
     <RelativeLayout
-        android:id="@+id/home_action"
-        android:layout_width="fill_parent"
-        android:layout_height="48dp"
-        android:background="@drawable/bar_action_bg"
-        android:orientation="horizontal" >
+            android:id="@+id/home_action"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bar_action_bg"
+            android:orientation="horizontal" >
 
         <TextView
-            android:id="@+id/title_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="@dimen/appname_textsize"
-            android:textStyle="normal" />
+                android:id="@+id/title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="normal" />
 
         <ImageView
-            android:id="@+id/img_set"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/icon_action_set" />
+                android:id="@+id/img_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_action_set" />
 
         <ImageView
-            android:id="@+id/divid_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/img_set"
-            android:src="@drawable/bar_action_divider" />
+                android:id="@+id/divid_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/img_set"
+                android:src="@drawable/bar_action_divider" />
 
         <ImageView
-            android:id="@+id/img_sound"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/divid_1"
-            android:src="@drawable/icon_action_sound_on" />
+                android:id="@+id/img_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/divid_1"
+                android:src="@drawable/icon_action_sound_on" />
 
         <ImageView
-            android:id="@+id/divid_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/img_sound"
-            android:src="@drawable/bar_action_divider" />
+                android:id="@+id/divid_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/img_sound"
+                android:src="@drawable/bar_action_divider" />
     </RelativeLayout>
 
 
-        <RelativeLayout
-            android:id="@+id/ry_home_title_cancle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            >
-
-           <!--  <ImageView
-                android:id="@+id/img_home_title_cancle"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/icon_inputfield_cancel" 
-                android:visibility="gone"/> -->
-            
-            <Button 
-                android:id="@+id/btn_home_title_cancle"
-                android:layout_width="70dp"
-                android:layout_height="35dp"
-                android:layout_centerVertical="true"
-                android:text="@string/btntext_cancel"
-                android:textSize="12dp"
-                android:textColor="@color/info_gray"
-                android:background="@drawable/comkit_button_lable_grey"/>
-        </RelativeLayout>
-    </RelativeLayout>
 
     <GridView
-        android:id="@+id/home_function_gv"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@id/home_title"
-        android:layout_marginLeft="1.5dp"
-        android:layout_marginRight="1.5dp"
-        android:layout_marginTop="1.5dp"
-        android:background="#F7F7F7"
-        android:horizontalSpacing="1dp"
-        android:numColumns="2"
-        android:verticalSpacing="1dp" >
+            android:id="@+id/home_function_gv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginRight="1.5dp"
+            android:layout_marginTop="1.5dp"
+            android:background="#F7F7F7"
+            android:horizontalSpacing="1dp"
+            android:numColumns="2"
+            android:verticalSpacing="1dp" >
     </GridView>
     <RelativeLayout
-        android:id="@+id/chg_store_rl"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/home_title"
-        android:layout_marginTop="1.5dp"
-        android:visibility="gone" >
+            android:id="@+id/chg_store_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1.5dp"
+            android:visibility="gone" >
     </RelativeLayout>
-     <RelativeLayout
-        android:id="@+id/setup_rl"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:visibility="gone" >
+    <RelativeLayout
+            android:id="@+id/setup_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
     </RelativeLayout>
 </RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp" >
+
+                <ImageView
+                    android:id="@+id/function_img"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/icon_home_module_order" />
+
+                <TextView
+                    android:id="@+id/btn_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/state_bubble_red"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFffffff"
+                    android:textSize="12dp"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/function_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:text="订单管理"
+            android:textColor="#666666"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

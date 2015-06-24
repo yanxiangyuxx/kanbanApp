@@ -100,7 +100,7 @@ public class LoginManage {
 		name = userName;
 		pwd = userPwd;
 		autoLogin = isAutoLogin;
-		String urlStr = "http://10.8.4.73/KanbanAppController/login.do?username="+userName+"&password="+userPwd;
+		String urlStr = "http://10.8.4.44/KanbanAppController/login.do?username="+userName+"&password="+userPwd;
 		JDLog.d(TAG, "login--Url-->>"+urlStr);
 		MyJsonRequest myJsonRequest = new MyJsonRequest(Method.GET, urlStr, responseListener(), errorListener());
 		RequestManager.addRequest(myJsonRequest, mContext);

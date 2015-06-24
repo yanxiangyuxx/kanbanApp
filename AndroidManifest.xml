@@ -26,7 +26,10 @@
         <activity
                 android:name="com.jd.jr.kanbanApp.activity.HomeActivity"
                 >
+        </activity>
 
+        <activity android:name="com.jd.jr.kanbanApp.activity.ZCActivity"
+                >
         </activity>
 
     </application>
